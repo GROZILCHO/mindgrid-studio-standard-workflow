@@ -1,4 +1,4 @@
-﻿# Decisions Log Template
+# Decisions Log Template
 
 ## Purpose
 
@@ -8,19 +8,17 @@ Status: Draft
 
 ## Usage Rules
 
-Update only when a real decision is made. Do not use this file as a daily changelog.
+Use only for real decisions that affect strategy, architecture, technical direction, content direction, workflow, or launch readiness. Do not use this file as a daily changelog or task summary.
 
 ## Template Structure
 
-| Date | Decision | Type | Reason | Owner | Impact |
+| Decision Date | Decision | Reason | Alternatives Considered | Impact | Related Files/Tasks |
 | --- | --- | --- | --- | --- | --- |
-| YYYY-MM-DD | Placeholder | Strategic/Technical/Content | Placeholder | Placeholder | Placeholder |
+| YYYY-MM-DD | Placeholder decision | Placeholder | Placeholder | Placeholder | Placeholder |
 
-## Placeholder Sections
+## Placeholder Content
 
-- Future scope
-- Required inputs
-- Working notes
-- Validation notes
-- Open questions
+- Record the decision after it is made.
+- Include enough context for a future reviewer to understand why the decision exists.
+- Link affected files, tasks, issues, or prompts when useful.
 

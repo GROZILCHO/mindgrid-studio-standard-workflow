@@ -1,4 +1,4 @@
-﻿# Current Status Template
+# Current Status Template
 
 ## Purpose
 
@@ -8,19 +8,23 @@ Status: Draft
 
 ## Usage Rules
 
-Update this file after significant implementation, QA, deployment, or planning tasks. It should show current phase, completed work, active issues, next task, git status, last validation, and do not touch notes.
+Update after significant implementation, QA, deployment, or planning tasks. Do not update for every tiny edit unless the task explicitly requests it or project state changes.
 
 ## Current Phase
 
 Placeholder.
 
-## Completed Work
+## Current State
 
 Placeholder.
+
+## Completed Since Last Update
+
+- Placeholder.
 
 ## Active Issues
 
-Placeholder.
+- Placeholder.
 
 ## Next Task
 
@@ -28,20 +32,21 @@ Placeholder.
 
 ## Git Status
 
+```txt
 Placeholder.
+```
 
-## Last Successful Validation
+## Last Validation
 
+```txt
 Placeholder.
+```
 
 ## Do Not Touch
 
+- Placeholder.
+
+## Handoff Notes
+
 Placeholder.
-
-## Placeholder Sections
-
-- Blockers
-- Pending decisions
-- Deployment notes
-- Handoff notes
 

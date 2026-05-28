@@ -1,24 +1,24 @@
 # Next Actions Template
 
-Status: Draft
-
 ## Purpose
 
 Reusable project tracking document for concrete upcoming tasks.
 
+Status: Draft
+
 ## Usage Rules
 
-Update when there are concrete next steps. List next tasks in priority order. Each item should include owner, status, priority, and dependency if known.
+Update when there are concrete next steps. Keep tasks actionable, ordered by priority, and clear enough to become the next ChatGPT or Codex prompt.
 
 ## Template Structure
 
-| Priority | Task | Owner | Status | Dependency | Notes |
+| Priority | Action | Owner | Status | Dependency | Suggested Next Prompt/Task |
 | --- | --- | --- | --- | --- | --- |
-| High | Placeholder next task | Placeholder | Pending | Placeholder | Placeholder |
+| High | Placeholder action | Placeholder | Pending | Placeholder | Placeholder |
 
 ## Placeholder Content
 
-- Add the next concrete project task.
-- Keep items actionable and ordered by priority.
-- Remove stale items when they are completed or replaced.
+- Add concrete next tasks only.
+- Remove or revise stale items after completion.
+- Link related issues or decisions when useful.
 

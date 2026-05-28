@@ -1,24 +1,24 @@
 # Issues Log Template
 
-Status: Draft
-
 ## Purpose
 
 Reusable project tracking document for bugs, blockers, risks, and unresolved questions.
 
+Status: Draft
+
 ## Usage Rules
 
-Update when bugs, blockers, risks, or unresolved questions are found. Each issue should include description, severity, affected area, status, owner, and proposed next action.
+Update when bugs, blockers, risks, or unresolved questions are found. Keep issue entries specific and actionable.
 
 ## Template Structure
 
-| ID | Description | Severity | Affected Area | Status | Owner | Proposed Next Action |
-| --- | --- | --- | --- | --- | --- | --- |
-| ISSUE-001 | Placeholder issue | Low/Medium/High | Placeholder | Open | Placeholder | Placeholder |
+| ID | Severity | Affected Area | Description | Status | Owner | Proposed Action | Resolution Notes |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| ISSUE-001 | Low/Medium/High | Placeholder | Placeholder issue | Open | Placeholder | Placeholder | Placeholder |
 
 ## Placeholder Content
 
 - Add newly discovered issues or risks.
-- Keep status current as issues are resolved or deferred.
-- Link related decisions or tasks when useful.
+- Update status as issues are resolved, deferred, or replaced.
+- Link related tasks, decisions, or validation output when useful.
 
