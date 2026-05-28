@@ -1,16 +1,53 @@
-﻿# Current Status
-
-## Purpose
-
-Starter-kit placeholder for project-specific documentation.
+# Current Status
 
 Status: Draft
 
-## Placeholder Sections
+## Purpose
 
-- Future scope
-- Required inputs
-- Working notes
-- Validation notes
-- Open questions
+Tracks the active project state so a new ChatGPT/Codex session can continue without relying on memory.
+
+## Usage Notes
+
+- Update after significant planning, implementation, QA, deployment, or handoff work.
+- Do not update after every tiny edit unless requested.
+
+## Current Phase
+
+[TBD]
+
+## Current State
+
+[TBD]
+
+## Completed Since Last Update
+
+- [TBD]
+
+## Active Issues
+
+- [TBD]
+
+## Next Task
+
+[TBD]
+
+## Git Status
+
+```txt
+[TBD]
+```
+
+## Last Successful Validation
+
+```txt
+[TBD]
+```
+
+## Do Not Touch
+
+- [TBD]
+
+## Handoff Notes
+
+[TBD]
 
