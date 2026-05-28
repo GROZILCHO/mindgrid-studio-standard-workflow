@@ -4,21 +4,35 @@ Status: Draft
 
 ## Purpose
 
-This docs folder stores the durable project memory for a React/Vite project. Implementation should follow these documents instead of relying on chat memory.
+This folder contains the project documentation copied into a new React/Vite MindGrid Studio project before implementation begins.
 
-## What These Docs Should Contain
+## Usage Notes
 
-- Route map: approved pages, route paths, redirects, and 404 behavior.
-- SEO plan: metadata, canonicals, sitemap, robots, Open Graph images, schema, and indexing rules.
-- Design system: colors, typography, spacing, component patterns, and visual constraints.
-- Image asset register: source images, optimized derivatives, runtime paths, alt text, and status.
-- Deployment guide: build commands, deployment package rules, hosting notes, and post-deploy checks.
-- Current status: active phase, recent validation, git status, next task, and handoff notes.
-- Issues: bugs, blockers, risks, unresolved questions, and production observations.
-- Decisions: real technical, route, SEO, design, content, or workflow decisions.
-- Handoff: context needed to resume work in a new chat or agent session.
+- Use these docs to define project scope, routes, SEO, content, design, assets, validation, deployment, and handoff context.
+- GitHub documentation is the durable project memory.
+- Notion may track operational tasks, but implementation truth belongs in repository docs.
+- Implementation should not start before PROJECT_BRIEF.md, PROJECT_RULES.md, and SITE_STRUCTURE.md are established.
 
-## Usage Rule
+## Recommended Reading Order
 
-Before Codex implementation, the relevant docs should be inspected and the allowed file scope should be clear.
+1. PROJECT_BRIEF.md
+2. PROJECT_RULES.md
+3. SITE_STRUCTURE.md
+4. CONTENT_MODEL.md
+5. DESIGN_SYSTEM.md
+6. SEO_PLAN.md
+7. IMAGE_ASSET_REGISTER.md
+8. CURRENT_STATUS.md
+9. NEXT_ACTIONS.md
+10. ISSUES_LOG.md
+11. DECISIONS_LOG.md
+12. DEPLOYMENT_GUIDE.md
+13. QA_CHECKLIST.md
+14. PROJECT_HANDOFF.md
+
+## Relationship To Codex Tasks
+
+Codex tasks should be scoped from these docs. Each task should define context, goal, allowed files, forbidden files, requirements, validation, output required, and stop conditions.
+
+Before assigning Codex implementation work, confirm route structure, SEO behavior, design rules, and asset rules are documented.
 

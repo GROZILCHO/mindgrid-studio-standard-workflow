@@ -4,20 +4,40 @@ Status: Draft
 
 ## Purpose
 
-React/Vite project tracking document for bugs, blockers, risks, and unresolved questions.
+Tracks React/Vite bugs, blockers, risks, unresolved questions, and production observations.
 
-## Usage Rules
+## Usage Notes
 
-Update when bugs, blockers, risks, or unresolved questions are found. Each issue should include description, severity, affected area, status, owner, and proposed next action.
+- Update when a bug, blocker, risk, unresolved question, or production observation is found.
+- Do not use this as a completed-task summary.
 
-## Template Structure
+## Issue Table
 
-| ID | Description | Severity | Affected Area | Status | Owner | Proposed Next Action |
-| --- | --- | --- | --- | --- | --- | --- |
-| ISSUE-001 | Placeholder issue | Low/Medium/High | Placeholder | Open | Placeholder | Placeholder |
+| ID | Severity | Affected Area | Description | Status | Owner | Proposed Action | Resolution Notes |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| ISSUE-001 | Low/Medium/High/Critical | [TBD] | [TBD] | Open | [Owner] | [TBD] | [TBD] |
 
-## Placeholder Content
+## React/Vite Issue Areas
 
-- Add newly discovered issues or risks.
-- Keep status current as issues are resolved or deferred.
+- Routes.
+- SEO.
+- Build.
+- Prerender.
+- Hydration.
+- Assets.
+- Deployment.
+- Performance.
+
+## Severity Guide
+
+- Critical: blocks launch, breaks core functionality, corrupts data, or creates serious production risk.
+- High: affects important user flows, SEO, performance, deployment, or delivery.
+- Medium: should be fixed before final release but does not block all work.
+- Low: cosmetic, documentation, minor UX, or future polish.
+
+## Update Rules
+
+- Keep issue descriptions factual.
+- Update status as issues are resolved, deferred, or replaced.
+- Link related next actions, decisions, files, tasks, or validation output when useful.
 

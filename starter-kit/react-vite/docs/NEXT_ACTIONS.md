@@ -4,20 +4,29 @@ Status: Draft
 
 ## Purpose
 
-React/Vite project tracking document for concrete upcoming tasks.
+Tracks concrete upcoming React/Vite project tasks in priority order.
 
-## Usage Rules
+## Usage Notes
 
-Update when there are concrete next steps. List next tasks in priority order. Each item should include owner, status, priority, and dependency if known.
+- Update when there are concrete next steps.
+- Do not use as a daily changelog.
+- Keep tasks clear enough to become ChatGPT or Codex prompts.
 
-## Template Structure
+## Task Table
 
-| Priority | Task | Owner | Status | Dependency | Notes |
+| Priority | Action | Owner | Status | Dependency | Suggested Next Prompt/Task |
 | --- | --- | --- | --- | --- | --- |
-| High | Placeholder next task | Placeholder | Pending | Placeholder | Placeholder |
+| High | [TBD] | [Owner] | Pending | [TBD] | [TBD] |
 
-## Placeholder Content
+## Notes
 
-- Add the next concrete React/Vite project task.
-- Keep items actionable and ordered by priority.
+- Use High / Medium / Low priority.
+- Use statuses such as Pending, In Progress, Blocked, Done, Deferred.
+- Separate route, SEO, design, asset, performance, deployment, and content tasks when possible.
+
+## Update Rules
+
+- Update when follow-up work is clear.
+- Link related issues or decisions when useful.
+- Do not create tasks for every tiny line edit unless part of a tracked sprint.
 
