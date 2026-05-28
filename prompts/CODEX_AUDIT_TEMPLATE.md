@@ -2,7 +2,7 @@
 
 Status: Draft
 
-## 1. Purpose
+## Purpose
 
 This template is used for audit-only Codex tasks.
 
@@ -304,4 +304,3 @@ Audit first. Change later.
 Do not repair during inspection.
 Do not hide uncertainty.
 Do not turn an audit into implementation without approval.
-

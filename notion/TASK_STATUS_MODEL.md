@@ -6,6 +6,8 @@ Status: Draft
 
 This document defines a practical task status model for MindGrid Studio OS / Notion project tracking.
 
+GitHub remains the implementation source of truth; Notion tracks operational task state, ownership, deadlines, priorities and review status.
+
 ## 1. Recommended Statuses
 
 | Status | Meaning | Use when |
@@ -86,4 +88,3 @@ Do not mark a task Done if:
 - Files were changed outside scope.
 - Current Git state is unclear.
 - Missing access/credentials block verification.
-
