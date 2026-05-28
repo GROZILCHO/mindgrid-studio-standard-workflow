@@ -1,10 +1,10 @@
 # Issues Log Template
 
+Status: Draft
+
 ## Purpose
 
 Reusable project tracking document for bugs, blockers, risks, and unresolved questions that should not depend on chat memory.
-
-Status: Draft
 
 ## Usage Rules
 
@@ -36,7 +36,7 @@ Status: Draft
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | ISSUE-001 | Low/Medium/High/Critical | Placeholder area | Placeholder issue or risk | Open | Rosen / ChatGPT / Codex | Placeholder next action | Placeholder resolution notes |
 
-## Placeholder Content
+## Notes
 
 - Add one row per issue, blocker, risk, or unresolved question.
 - Keep descriptions factual and short.

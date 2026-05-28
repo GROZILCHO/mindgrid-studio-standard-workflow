@@ -1,10 +1,10 @@
 # Next Actions Template
 
+Status: Draft
+
 ## Purpose
 
 Reusable project tracking document for concrete upcoming tasks that should not be lost between ChatGPT, Codex, and Rosen sessions.
-
-Status: Draft
 
 ## Usage Rules
 
@@ -35,7 +35,7 @@ Status: Draft
 | --- | --- | --- | --- | --- | --- |
 | High | Placeholder action | Rosen / ChatGPT / Codex | Pending | Placeholder dependency or none | Placeholder next prompt or task |
 
-## Placeholder Content
+## Notes
 
 - High priority: define the next task that moves the project forward.
 - Medium priority: capture useful follow-up work that is not blocking.
