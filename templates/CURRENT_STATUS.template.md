@@ -6,6 +6,10 @@ Reusable project status document for tracking the active workflow state in real 
 
 Status: Draft
 
+## Usage Rules
+
+Update this file after significant implementation, QA, deployment, or planning tasks. It should show current phase, completed work, active issues, next task, git status, last validation, and do not touch notes.
+
 ## Current Phase
 
 Placeholder.

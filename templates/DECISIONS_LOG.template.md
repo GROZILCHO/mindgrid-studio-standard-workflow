@@ -2,9 +2,19 @@
 
 ## Purpose
 
-Reusable template placeholder for future project documentation.
+Reusable project log for real strategic, architectural, technical, or content decisions.
 
 Status: Draft
+
+## Usage Rules
+
+Update only when a real decision is made. Do not use this file as a daily changelog.
+
+## Template Structure
+
+| Date | Decision | Type | Reason | Owner | Impact |
+| --- | --- | --- | --- | --- | --- |
+| YYYY-MM-DD | Placeholder | Strategic/Technical/Content | Placeholder | Placeholder | Placeholder |
 
 ## Placeholder Sections
 
