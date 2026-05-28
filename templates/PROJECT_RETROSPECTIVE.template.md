@@ -1,27 +1,75 @@
-﻿# Project Retrospective Template
-
-## Purpose
-
-Reusable project retrospective for summarizing lessons, outcomes, and improvement items after launch or a major project phase.
+# Project Retrospective
 
 Status: Draft
 
-## Usage Rules
+## Purpose
 
-Use after a project launch or major phase. Do not use as a daily status tracker.
+This document captures what was learned after a project or major phase so the workflow can improve over time.
 
-## Tracking References
+## Usage Notes
 
-- CURRENT_STATUS.md for final project state.
-- DECISIONS_LOG.md for major decisions.
-- ISSUES_LOG.md for known issues and risks.
-- NEXT_ACTIONS.md for remaining follow-up work.
+- Use after launch or after a major project phase.
+- Do not use this as a daily status tracker.
+- Convert reusable lessons into template, checklist, prompt, or workflow improvements when appropriate.
 
-## Placeholder Sections
+## 1. Project Summary
 
-- Future scope
-- Required inputs
-- Working notes
-- Validation notes
-- Open questions
+- Project name:
+- Project type:
+- Timeline:
+- Main goal:
+- Final status:
+- Team/roles involved:
+
+## 2. What Went Well
+
+- Process wins:
+- Technical wins:
+- Content/design wins:
+- Coordination wins:
+- QA/deployment wins:
+
+## 3. What Caused Friction
+
+- Unclear context:
+- Missing files/access:
+- Unclear decisions:
+- Scope drift:
+- Repeated mistakes:
+- Tool limitations:
+- Communication issues:
+
+## 4. Decisions That Became Standards
+
+| Decision | Why It Worked | Should Become Standard? | Notes |
+| --- | --- | --- | --- |
+| Placeholder | Placeholder | Yes/No | Placeholder |
+
+## 5. Issues To Prevent Next Time
+
+| Issue | Root Cause | Prevention Rule | Related Workflow File |
+| --- | --- | --- | --- |
+| Placeholder | Placeholder | Placeholder | Placeholder |
+
+## 6. Reusable Assets/Templates Created
+
+- Prompts:
+- Checklists:
+- Components:
+- Docs:
+- Image systems:
+- Deployment notes:
+- QA procedures:
+
+## 7. Workflow Improvement Actions
+
+| Action | Priority | Owner | Target File / Area | Status |
+| --- | --- | --- | --- | --- |
+| Placeholder | Medium | Placeholder | Placeholder | Pending |
+
+## 8. Final Notes
+
+- What to repeat:
+- What to avoid:
+- What to improve before next project:
 
