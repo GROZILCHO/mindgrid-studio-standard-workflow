@@ -1,43 +1,46 @@
-﻿# Agents
-
-## Purpose
-
-Starter-kit placeholder for project-specific documentation.
+# General Project AGENTS
 
 Status: Draft
 
-## Basic Operating Rules
+## Purpose
 
-- Inspect project docs before implementation.
-- Do not invent routes, colors, claims, or file structures.
-- Use narrow tasks with clear acceptance criteria.
-- Always report files changed, validation, risks, and git status.
+This file defines how Codex and assistant agents should behave inside a general MindGrid Studio project.
 
-## Tracking Document Rules
+## Operating Rules
 
-Codex must not update all tracking files automatically on every small task.
+Codex and assistant agents must:
 
-Codex should update tracking docs only when:
+- Inspect docs before implementation.
+- Work from PROJECT_BRIEF.md, PROJECT_RULES.md, and CURRENT_STATUS.md.
+- Not invent routes, claims, styles, or file structures.
+- Use narrow tasks.
+- Respect allowed and forbidden file scope.
+- Update tracking docs only when explicitly requested or project state changes.
+- Stop on dirty worktree unless the task allows it.
+- Report files changed, validation, risks, and git status.
 
-- The task explicitly requests it.
-- The task changes project state.
-- A new issue or risk is found.
-- A decision is made.
-- A handoff is requested.
+## Required Context Files
 
-## Tracking Document Responsibilities
+Inspect these files when relevant:
 
-- CURRENT_STATUS.md: update after significant implementation, QA, deployment, or planning tasks.
-- NEXT_ACTIONS.md: update when there are concrete next steps.
-- ISSUES_LOG.md: update when bugs, blockers, risks, or unresolved questions are found.
-- DECISIONS_LOG.md: update only when a real strategic, architectural, technical, or content decision is made.
-- PROJECT_HANDOFF.md: update only when requested, at the end of a major phase, before switching chats or agents, or before pausing a project.
+- docs/PROJECT_BRIEF.md
+- docs/PROJECT_RULES.md
+- docs/CURRENT_STATUS.md
+- docs/NEXT_ACTIONS.md
+- docs/ISSUES_LOG.md
+- docs/DECISIONS_LOG.md
+- docs/SITE_STRUCTURE.md when routes/pages are involved.
+- docs/DESIGN_SYSTEM.md when UI is involved.
+- docs/SEO_PLAN.md when SEO is involved.
+- docs/IMAGE_ASSET_REGISTER.md when images are involved.
 
-## Placeholder Sections
+## Stop Conditions
 
-- Future scope
-- Required inputs
-- Working notes
-- Validation notes
-- Open questions
+Stop and report if:
+
+- Required context is missing.
+- Allowed files are unclear.
+- Forbidden files need changes.
+- Project state conflicts with the requested task.
+- Validation cannot be run when required.
 

@@ -1,43 +1,57 @@
-﻿# Agents
-
-## Purpose
-
-Starter-kit placeholder for project-specific documentation.
+# React/Vite Project AGENTS
 
 Status: Draft
 
-## Basic Operating Rules
+## Purpose
 
-- Inspect project docs before implementation.
-- Do not invent routes, colors, claims, or file structures.
-- Use narrow tasks with clear acceptance criteria.
-- Always report files changed, validation, risks, and git status.
+This file defines Codex rules for React/Vite projects.
 
-## Tracking Document Rules
+## Operating Rules
 
-Codex must not update all tracking files automatically on every small task.
+Codex must:
 
-Codex should update tracking docs only when:
+- Inspect AGENTS.md and docs before changes.
+- Not invent routes.
+- Not invent design tokens.
+- Not alter SEO unless requested.
+- Not alter image paths unless requested.
+- Not mix performance, design, content, and SEO changes unless explicitly allowed.
+- Run validation commands when relevant.
+- Report build/typecheck results.
+- Never commit deployment ZIPs.
+- Stop if hydration, route, SEO, or deployment risks are found.
 
-- The task explicitly requests it.
-- The task changes project state.
-- A new issue or risk is found.
-- A decision is made.
-- A handoff is requested.
+## Typical Validation Commands
 
-## Tracking Document Responsibilities
+```cmd
+npx.cmd tsc --noEmit
+npm.cmd run build
+```
 
-- CURRENT_STATUS.md: update after significant implementation, QA, deployment, or planning tasks.
-- NEXT_ACTIONS.md: update when there are concrete next steps.
-- ISSUES_LOG.md: update when bugs, blockers, risks, or unresolved questions are found.
-- DECISIONS_LOG.md: update only when a real strategic, architectural, technical, or content decision is made.
-- PROJECT_HANDOFF.md: update only when requested, at the end of a major phase, before switching chats or agents, or before pausing a project.
+Exact commands may differ by project. Use the project README.md, package.json scripts, and DEPLOYMENT_GUIDE.md when available.
 
-## Placeholder Sections
+## Required Context Files
 
-- Future scope
-- Required inputs
-- Working notes
-- Validation notes
-- Open questions
+Inspect these files when relevant:
+
+- docs/PROJECT_BRIEF.md
+- docs/PROJECT_RULES.md
+- docs/SITE_STRUCTURE.md
+- docs/DESIGN_SYSTEM.md
+- docs/SEO_PLAN.md
+- docs/IMAGE_ASSET_REGISTER.md
+- docs/CURRENT_STATUS.md
+- docs/ISSUES_LOG.md
+- docs/DEPLOYMENT_GUIDE.md
+
+## Stop Conditions
+
+Stop and report if:
+
+- Route structure is unclear.
+- SEO map conflicts with routes.
+- Hydration risk is found.
+- Build/typecheck fails.
+- Forbidden files need changes.
+- Deployment target is unclear.
 

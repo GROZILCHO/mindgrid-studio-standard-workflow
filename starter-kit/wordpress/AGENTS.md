@@ -1,43 +1,48 @@
-﻿# Agents
-
-## Purpose
-
-Starter-kit placeholder for project-specific documentation.
+# WordPress Project AGENTS
 
 Status: Draft
 
-## Basic Operating Rules
+## Purpose
 
-- Inspect project docs before implementation.
-- Do not invent routes, colors, claims, or file structures.
-- Use narrow tasks with clear acceptance criteria.
-- Always report files changed, validation, risks, and git status.
+This file defines Codex rules for WordPress projects.
 
-## Tracking Document Rules
+## Operating Rules
 
-Codex must not update all tracking files automatically on every small task.
+Codex must:
 
-Codex should update tracking docs only when:
+- Distinguish file-based work from database/admin work.
+- Not assume it can see WordPress admin state.
+- Not assume Elementor layouts unless exported.
+- Not modify production-sensitive files without backup/staging context.
+- Not update plugins blindly.
+- Not change WooCommerce-related files without explicit scope.
+- Not invent plugin settings.
+- Not edit theme/plugin files outside allowed scope.
+- Request backup/staging confirmation for risky tasks.
+- Report limitations clearly.
 
-- The task explicitly requests it.
-- The task changes project state.
-- A new issue or risk is found.
-- A decision is made.
-- A handoff is requested.
+## Required Context
 
-## Tracking Document Responsibilities
+Inspect or ask for:
 
-- CURRENT_STATUS.md: update after significant implementation, QA, deployment, or planning tasks.
-- NEXT_ACTIONS.md: update when there are concrete next steps.
-- ISSUES_LOG.md: update when bugs, blockers, risks, or unresolved questions are found.
-- DECISIONS_LOG.md: update only when a real strategic, architectural, technical, or content decision is made.
-- PROJECT_HANDOFF.md: update only when requested, at the end of a major phase, before switching chats or agents, or before pausing a project.
+- docs/PROJECT_BRIEF.md
+- docs/PROJECT_RULES.md
+- docs/CURRENT_STATUS.md
+- docs/ISSUES_LOG.md
+- docs/DEPLOYMENT_GUIDE.md
+- Plugin register if available.
+- Staging/backup status if relevant.
+- Exported Elementor/ACF files if relevant.
 
-## Placeholder Sections
+## Stop Conditions
 
-- Future scope
-- Required inputs
-- Working notes
-- Validation notes
-- Open questions
+Stop and report if:
+
+- Production backup is missing for risky work.
+- Staging is unavailable for risky work.
+- WordPress admin/database state is required but unavailable.
+- Elementor/ACF exports are required but missing.
+- WooCommerce data could be affected.
+- Forbidden files need changes.
+- Validation cannot be performed.
 
