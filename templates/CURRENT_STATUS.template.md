@@ -36,7 +36,7 @@ Placeholder.
 Placeholder.
 ```
 
-## Last Validation
+## Last Successful Validation
 
 ```txt
 Placeholder.
@@ -49,4 +49,3 @@ Placeholder.
 ## Handoff Notes
 
 Placeholder.
-

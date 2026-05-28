@@ -30,7 +30,7 @@ Placeholder.
 
 - Placeholder.
 
-## Current Repo State
+## Current Repository State
 
 ```txt
 Placeholder.
@@ -52,4 +52,3 @@ Placeholder.
 ## Warnings / Do Not Touch
 
 - Placeholder.
-

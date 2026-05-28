@@ -34,11 +34,11 @@ List files, folders, systems, or content areas Codex must not modify.
 
 ## Tracking Docs Update
 
-- Should `CURRENT_STATUS.md` be updated? yes/no
-- Should `NEXT_ACTIONS.md` be updated? yes/no
-- Should `ISSUES_LOG.md` be updated? yes/no
-- Should `DECISIONS_LOG.md` be updated? yes/no
-- Should `PROJECT_HANDOFF.md` be updated? yes/no
+- Update CURRENT_STATUS.md: yes/no
+- Update NEXT_ACTIONS.md: yes/no
+- Update ISSUES_LOG.md: yes/no / only if issues found
+- Update DECISIONS_LOG.md: yes/no / only if decision made
+- Update PROJECT_HANDOFF.md: yes/no
 
 If yes, specify the exact tracking file updates expected.
 
@@ -65,4 +65,3 @@ Codex should stop and report instead of continuing when:
 - The requested change conflicts with `AGENTS.md` or project rules.
 - Validation fails for reasons unrelated to the requested change.
 - A destructive operation would be required.
-

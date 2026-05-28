@@ -12,11 +12,15 @@ MindGrid Studio Standard Workflow v1.0 is a documentation-first operating system
 
 It is not an application repository. It contains workflow documents, templates, prompts, checklists, starter-kit documentation, and platform notes that can be reused when creating project-specific repositories.
 
+The repository provides the repeatable operating core for future web projects so each project can begin with clear roles, starter documentation, tracking files, and Codex-ready task prompts.
+
 ## When To Use It
 
 Use this repository when starting a new MindGrid Studio web project, preparing a project handoff, writing a Codex task, auditing a project, or standardizing documentation before implementation begins.
 
 Use the templates as starting points, then copy the relevant project docs into the real project repository.
+
+Use it before implementation begins, before a major project phase, when switching between ChatGPT and Codex sessions, or when a project needs its operating docs restored to a consistent baseline.
 
 ## Operating Roles
 
@@ -47,4 +51,3 @@ This repository follows Variant B:
 - Project archive workflow
 - Versioning policy
 - Example project references
-

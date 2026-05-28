@@ -36,6 +36,7 @@ For this master workflow repository, inspect the relevant workflow, template, pr
 - Work on the smallest useful task that satisfies the request.
 - Keep edits inside the files allowed by the task.
 - Avoid unrelated refactors, rewrites, or structure changes.
+- Do not modify unrelated files.
 - Stop and report if the requested change conflicts with existing project rules.
 
 ## Forbidden Behavior
@@ -46,6 +47,7 @@ Codex must not invent:
 - Colors, typography, or visual systems.
 - Marketing claims, guarantees, prices, or business facts.
 - File structures, frameworks, or dependencies outside the task scope.
+- Changes to unrelated files.
 
 ## Reporting Requirements
 
@@ -73,7 +75,7 @@ Codex should update tracking docs only when:
 - `CURRENT_STATUS.md`: update after significant implementation, QA, deployment, or planning tasks. It should show current phase, current state, completed work, active issues, next task, git status, last validation, do not touch notes, and handoff notes.
 - `NEXT_ACTIONS.md`: update when there are concrete next steps. List tasks in priority order with owner, status, priority, dependency, and suggested next prompt or task.
 - `ISSUES_LOG.md`: update when bugs, blockers, risks, or unresolved questions are found. Include ID, severity, affected area, description, status, owner, proposed action, and resolution notes.
-- `DECISIONS_LOG.md`: update only when a real strategic, architectural, technical, or content decision is made. Do not use it as a daily changelog.
+- `DECISIONS_LOG.md`: update only when a real strategic, architectural, technical, content, SEO, design, or workflow decision is made. Do not use it as a daily changelog.
 - `PROJECT_HANDOFF.md`: update only when requested, at the end of a major phase, before switching chats or agents, or before pausing a project. It should summarize context for a new ChatGPT/Codex session.
 
 ## Placeholder Sections
@@ -81,4 +83,3 @@ Codex should update tracking docs only when:
 - Agent handoff examples
 - Review escalation rules
 - Project-specific reporting formats
-
