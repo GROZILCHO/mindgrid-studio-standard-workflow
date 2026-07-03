@@ -45,6 +45,11 @@ This repository follows Variant B:
 5. Use `prompts/CODEX_TASK_TEMPLATE.md` to create the first narrow Codex task.
 6. Validate the first task and update tracking docs only when project state changes.
 
+## PMO v2 Project Template
+
+A reusable PMO v2 project continuity template is available at `templates/project-pmo-v2/`.
+Use it to start or restore complex ChatGPT/Codex-managed projects with consistent handoff, workstream, repository, commercial, client, translation, next-action, and decision tracking.
+
 ## Placeholder Sections
 
 - Starter-kit copy workflow
