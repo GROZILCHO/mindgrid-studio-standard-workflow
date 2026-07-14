@@ -382,6 +382,31 @@ Codex should stop and report when:
 - A requested operation risks data loss.
 - The change may create route, SEO, design, content, or workflow drift.
 
+### Controlled Batch Tasks
+
+Narrow scope does not always mean one page or one file. A larger logical batch can be more efficient and equally controlled when:
+
+- The batch groups structurally related work.
+- Allowed and forbidden files are explicit.
+- The expected route, content, or output state is measurable.
+- Automated guards cover the whole batch.
+- One complete validation suite and one final report are required.
+
+Use batch tasks for repeatable work such as related localization content groups. Use microtasks for isolated blockers, uncertain architecture, or defects with high regression risk. Do not use budget efficiency as a reason to weaken validation or combine translation, runtime activation, and public SEO activation without phase gates.
+
+### Interrupted Task Recovery
+
+When a Codex session ends with valid uncommitted work:
+
+1. Do not reset, restore, clean, or overwrite the working tree.
+2. Run `git status` and inspect the complete diff.
+3. Classify each changed file against the interrupted task scope.
+4. Preserve valid partial work and report unrelated changes before continuing.
+5. Continue from the current state with the original completion criteria.
+6. Rerun the full validation suite, not only the unfinished command.
+
+Destructive cleanup commands must not be used before the existing changes are understood.
+
 ## GitHub As Project Memory
 
 GitHub stores the durable project truth.
@@ -488,4 +513,3 @@ Do not rely on memory.
 Do not rely on one chat.
 Do not start with code.
 Start with structure, documents, decisions, and controlled execution.
-

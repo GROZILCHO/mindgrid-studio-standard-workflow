@@ -451,6 +451,48 @@ Use a central `seoConfig` or equivalent SEO map for:
 
 SEO changes should be scoped and validated separately from visual or layout changes when possible. This reduces the risk of accidental route, metadata, or sitemap drift.
 
+### Multilingual Localization Phase Gate
+
+For a new locale, separate content preparation from public activation:
+
+1. Inventory conceptual routes, locale paths, content files, metadata, legal exceptions, and generated output.
+2. Create translated shared and page content in structurally related batches while the locale remains inactive.
+3. Run a content parity guard before exposing routes.
+4. Complete every approved content group and editorial review prerequisite.
+5. Enable only the approved locale routes for controlled runtime preview with `noindex, follow` when pre-indexing browser QA is required.
+6. Inspect generated HTML and hydrated runtime behavior, including `document.title`.
+7. Expose the locale in the language switcher only after every mapped target exists.
+8. Complete final editorial and technical QA.
+9. Remove temporary noindex protection and activate sitemap and reciprocal hreflang together under an explicit allowlist.
+10. Rebuild and validate the final branch before and after merge.
+
+The route model should use one locale-neutral key per conceptual page and explicit localized paths. Metadata lookup must include locale identity; a shared conceptual key alone is not sufficient when multiple locales are active.
+
+Recommended content parity checks:
+
+- Missing locale files or object keys.
+- Array-length mismatches and empty strings.
+- Suspicious untranslated source text.
+- Invalid script or diacritic characters for the target language.
+- Wrong-locale internal links.
+- Missing referenced assets.
+- Unplanned locale route entries.
+
+Recommended generated-output checks:
+
+- Exact total and per-locale prerender counts.
+- Exact total and per-locale sitemap counts.
+- Reciprocal hreflang for approved locale groups.
+- Self-referencing canonicals.
+- Expected robots behavior and no unexpected noindex.
+- No fabricated legal routes or alternates.
+- No missing routes, anchors, links, or assets.
+- No SSR fallback to another route or locale.
+
+Use an explicit approved route registry rather than broadly permitting every path under a locale prefix. Legal pages may remain single-locale until their translations are separately approved; do not fabricate mappings or redirect them to unrelated pages.
+
+Automated checks do not replace browser QA. Verify tab titles, language-switch state, responsive navigation, CTA wrapping, page imagery, overflow, and hydration behavior in representative routes and viewport sizes.
+
 ## 9. Component Architecture
 
 Component categories:
@@ -684,4 +726,3 @@ Use Codex for narrow controlled implementation.
 Validate every build.
 Deploy only from a known clean state.
 Do not trust memory, browser cache, or assumptions.
-

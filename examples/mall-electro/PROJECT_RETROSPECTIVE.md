@@ -59,6 +59,80 @@ This is an example/reference retrospective based on Mall Electro as a practical 
 | Performance surprises | Performance sprint started after many implementation decisions | Plan performance QA earlier for React/Vite projects | REACT_VITE_WORKFLOW.md |
 | Chat context overload | Too much project memory lived in conversation | Use CURRENT_STATUS.md and PROJECT_HANDOFF.md before context breaks | CURRENT_STATUS.md, PROJECT_HANDOFF.md |
 
+## Multilingual Localization Phase Retrospective
+
+### Validated Project Result
+
+Mall Electro completed 24 mapped BG/EN/RO public page groups on a dedicated localization branch before merging the validated result into `main`. The final static output contained 76 prerendered route files and 75 sitemap URLs: 27 BG, 24 EN, and 24 RO. Approved mapped pages used reciprocal BG/EN/RO hreflang and self-referencing canonicals. BG-only legal pages remained without fabricated EN/RO alternatives.
+
+This result is project evidence, not a universal route-count target. Future projects should define and validate their own explicit locale route registry and expected output counts.
+
+### Batch-Based Localization
+
+Page-by-page translation created excessive cycles of translation, reporting, external review, verification, and context recovery. The Romanian phase became more efficient when work was grouped into structurally related batches:
+
+1. Repository and localization inventory.
+2. Shared and overview content.
+3. Service and solution detail content.
+4. Industry detail content.
+5. Controlled runtime preview.
+6. Language switcher activation.
+7. Editorial QA and public SEO activation.
+
+Recommended standard: translate by related content models, not one page per Codex task. Run one complete validation suite and produce one report per batch. Use smaller tasks only for isolated blockers or defects that carry disproportionate risk.
+
+### Content Before Activation
+
+The safe sequence was to create locale content while routes remained inactive, verify structural parity, complete every approved content group, then expose runtime routes under `noindex, follow`. Browser QA and language-switch parity were completed before sitemap, hreflang, and public indexing were enabled.
+
+Recommended standard: do not combine initial translation, runtime activation, switcher exposure, and public SEO activation in one uncontrolled task. Treat content readiness, runtime preview, navigation exposure, and indexing as separate gates.
+
+### Locale-Neutral Route And SEO Architecture
+
+One locale-neutral route key per conceptual page allowed BG, EN, and RO paths to remain equivalent without forcing identical slugs. Locale-specific paths and SEO values remained explicit. SEO lookup had to be locale-aware rather than selecting the first metadata entry that shared a conceptual page key.
+
+An earlier defect showed why static inspection alone is insufficient: generated HTML titles were correct, but hydration could rewrite `document.title` from a wrong-locale fallback. The fix and verification required both generated HTML inspection and hydrated runtime checks.
+
+Recommended standard: use shared conceptual route keys, explicit localized path mappings, and locale-aware SEO registry entries. Validate the generated `<title>` and canonical output as well as runtime `document.title` after hydration.
+
+### Content Parity And Output Guards
+
+The content parity guard checked missing locale files, missing keys, array-length mismatches, empty strings, suspicious untranslated source text, Cyrillic or invalid Romanian diacritics, wrong-locale internal links, and missing image assets. It ran before locale activation and after editorial changes.
+
+The generated-output guard used an explicit allowlist and checked exact route and sitemap counts, reciprocal hreflang, self-referencing canonicals, legal-page exclusions, robots directives, internal routes, anchors, assets, and SSR fallback behavior.
+
+Recommended standard: add structural content parity before activating a locale, then validate generated output against the approved route registry. Never treat every path under a locale prefix as automatically valid.
+
+### Controlled Noindex Preview And Switcher Parity
+
+Romanian routes were first rendered with visible RO content while remaining absent from the sitemap and hreflang output, hidden from the public language switcher, and protected by `noindex, follow`. After route, content, browser, and structural QA, RO was added to the switcher. Editorial QA then preceded removal of noindex and activation of sitemap and hreflang.
+
+Every switchable conceptual page had a valid BG/EN/RO target before RO became visible. Legal pages stayed BG-only because approved translations did not exist.
+
+Recommended standard: use a controlled noindex preview when runtime review must precede public search activation. Never fabricate legal translations or redirect an unavailable legal locale to an unrelated overview page.
+
+### Codex Budget Mode And Session Recovery
+
+Larger guarded tasks were more efficient than repeated microtasks when they included explicit scope, allowed and forbidden files, exact output expectations, full-batch validation, and one final report. This approach is safe only when the architecture and automated guards make the batch testable.
+
+When the final RO task was interrupted, the continuation did not reset the repository. The recovery sequence was:
+
+1. Inspect `git status` and `git diff`.
+2. Classify existing edits against the interrupted task.
+3. Preserve valid partial work.
+4. Continue with the original completion criteria.
+5. Rerun the entire final validation suite.
+
+Recommended standard: never run `git reset --hard`, `git restore .`, or `git clean -fd` before classifying interrupted work. Use one explicit continuation task and repeat all final gates.
+
+### Branch, Merge, And Manual QA
+
+The localization phase used a dedicated feature branch while `main` remained stable. Content foundation and activation stages were committed separately. The final validated branch was merged with `--no-ff`, then rebuilt and checked on `main` before push.
+
+Automated guards did not replace manual review of browser tab titles, responsive navigation, switcher visibility, hero images, CTA wrapping, card alignment, overflow, or hydration behavior.
+
+Recommended standard: isolate major localization work on a feature branch, validate before and after merge, inspect generated HTML, and perform hydrated browser QA at representative desktop, tablet, and mobile widths.
+
 ## Reusable Assets / Templates Created
 
 - Codex task and audit templates.

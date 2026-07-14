@@ -29,6 +29,8 @@ Use this changelog to understand how the reusable workflow system evolved, which
 - Defined GitHub as the source of truth and shared project memory.
 - Defined Notion as the operations and task tracking layer.
 - Defined handoff and chat-limit protocol for long-running projects.
+- Added guarded logical-batch guidance for efficient Codex execution.
+- Added interrupted-session recovery rules that preserve and classify uncommitted work before continuation.
 
 ### Workflow Phases
 
@@ -43,6 +45,7 @@ Use this changelog to understand how the reusable workflow system evolved, which
 - Developed WordPress workflow.
 - Clarified the distinction between file-based React/Vite projects and WordPress projects with database, admin, media, plugin, and page builder state.
 - Added React/Vite guidance for route discipline, SEO config, prerender/static output, image optimization, performance, hydration, `.htaccess`, and deployment QA.
+- Added a React/Vite multilingual phase gate covering content parity, controlled noindex preview, locale-aware routing and SEO, strict output allowlists, and generated plus hydrated-runtime validation.
 - Added WordPress guidance for backups, staging, theme/builder strategy, plugin governance, database/media handling, Elementor/Gutenberg, WooCommerce risk, deployment, and rollback.
 
 ### Templates
@@ -107,6 +110,7 @@ Use this changelog to understand how the reusable workflow system evolved, which
   - task summary example
 - Clarified that Mall Electro is a case study reference and not a dependency for future projects.
 - Captured practical lessons around GitHub memory, Codex scope control, image governance, performance sprints, deployment QA, and audit-first workflow.
+- Extended the Mall Electro retrospective with the validated BG/EN/RO localization workflow, failure patterns, guards, branch strategy, and browser QA lessons.
 
 ## Notes
 
