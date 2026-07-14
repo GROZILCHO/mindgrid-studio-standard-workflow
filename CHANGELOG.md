@@ -112,6 +112,11 @@ Use this changelog to understand how the reusable workflow system evolved, which
 - Captured practical lessons around GitHub memory, Codex scope control, image governance, performance sprints, deployment QA, and audit-first workflow.
 - Extended the Mall Electro retrospective with the validated BG/EN/RO localization workflow, failure patterns, guards, branch strategy, and browser QA lessons.
 
+### PMO Project Instances
+
+- Added `projects/README.md` to clarify the roles of `projects/`, `examples/`, `templates/`, `starter-kit/`, `platform-workflows/`, and external application repositories.
+- Added `projects/mall-electro/` as a compact operational PMO instance linked to the external Mall Electro application repository and the reusable Mall Electro case study.
+
 ## Notes
 
 - This changelog tracks major workflow-system milestones.
