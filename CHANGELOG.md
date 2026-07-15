@@ -116,6 +116,7 @@ Use this changelog to understand how the reusable workflow system evolved, which
 
 - Added `projects/README.md` to clarify the roles of `projects/`, `examples/`, `templates/`, `starter-kit/`, `platform-workflows/`, and external application repositories.
 - Added `projects/mall-electro/` as a compact operational PMO instance linked to the external Mall Electro application repository and the reusable Mall Electro case study.
+- Added `projects/mall-agro/` as the central PMO context package for Mall Agro Redesign, linked to the external application repository without copying implementation source.
 
 ## Notes
 

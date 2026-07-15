@@ -31,9 +31,9 @@ This folder stores compact operational PMO project instances for active, maintai
 | Project | Status | Project Repository | PMO Instance | Case Study / Example | Current Phase |
 | --- | --- | --- | --- | --- | --- |
 | Mestimvsichko MindGrid | Active client-demo / requirements validation | `GROZILCHO/mindgrid-request-system` | `projects/mestimvsichko-mindgrid/` | Not applicable | Client demo / requirements validation |
+| Mall Agro Redesign | Active implementation QA needed; Grain Processing work uncommitted in application repository | `GROZILCHO/mall-agro-redesign` | `projects/mall-agro/` | No example package in this task | Grain Processing pre-commit QA |
 | Mall Electro | Release-ready in main; production deployment not confirmed here | `GROZILCHO/mall-electro` | `projects/mall-electro/` | `examples/mall-electro/` | Post-localization release readiness |
 
 ## PMO v2 Baseline
 
 Use `templates/project-pmo-v2/` as the structural baseline for complex project instances. Create only the files that are operationally useful for the project.
-
